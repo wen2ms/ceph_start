@@ -1,0 +1,13 @@
+service_type: iscsi
+service_id: gw
+placement:
+  hosts:
+    - ceph01
+    - ceph02
+    - ceph03
+spec:
+  pool: iscsi_pool
+  trusted_ip_list: "ip"
+  api_user: admin
+  api_password: admin
+  api_secure: false
